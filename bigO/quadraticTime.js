@@ -10,6 +10,6 @@ function logAllPairsOfArray(array) {
     }
 }
 
-logAllPairsOfArray(boxes);.
+logAllPairsOfArray(boxes);
 
 //BigO: O(n ^ 2)
