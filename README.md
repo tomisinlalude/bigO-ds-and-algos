@@ -50,16 +50,16 @@ Since the parameters `boxes1` and `boxes2` are different and most likely have di
 - **Drop non dominants**: If the Big O notation of a program is `O(n^2 + 3n + 150)`, the Big O is usually simplified to `O(n^2)` because as `n` scales, `3n` and `150` become insignificant. `n^2` becomes the dominant.
 
 ## Causes of Time Complexity
-Operations (+, -, *, /)
-Comparisons (<, >, ==, ===)
-Loops (for, while)
-Outside Function calls (function())
+1. Operations (+, -, *, /)
+2. Comparisons (<, >, ==, ===)
+3. Loops (for, while)
+4. Outside Function calls (function())
 
 ## Causes of Space Complexity
-Variables
-Data Structures
-Function call
-Allocations
+1. Variables
+2. Data Structures
+3. Function call
+4. Allocations
 
 Resources: 
 - [BigO cheat sheet](https://www.bigocheatsheet.com/).
