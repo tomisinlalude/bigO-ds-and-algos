@@ -11,6 +11,6 @@ function funChallenge(input) {
     return a; // O(1)
   }
   
-  funChallenge(10000);
+  funChallenge([1,2,3,4,5,6,7,8,9,10]);
   
   //BigO: O(3 + 4n);
