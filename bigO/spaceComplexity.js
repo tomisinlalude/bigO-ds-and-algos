@@ -9,3 +9,16 @@ booooo([1,2,3,4,5]);
 
 //Time Complexity: O(n)
 //Space Complexity: O(1)
+
+function arrayofHiNtimes {
+    let hiArray = [];
+    for (let i=0; i<n; i++) {
+        hiArray[i] = "Hi";
+    }
+    return hiArray;
+}
+
+arrayofHiNtimes(6);
+
+//Time Complexity: O(n)
+//Space Complexity: O(n)
