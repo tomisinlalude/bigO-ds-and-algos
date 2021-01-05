@@ -25,5 +25,20 @@ The worst case is when `nemo` is the last index of the array and the loop will e
 - Remove Constants: In Big O, we really don't care about constants. For instance, if the Big O of a program is
 `O(n/2 + 100)`, `100` becomes insignificant in the large scheme of things (i.e as n gets larger and larger). Also, `n/2` is replaced with `n` for the same scalability reason. So, the Big O notation becomes `O(n)`
 
+- Different terms for inputs: Look at this:
+
+```
+function compressBoxesTwice(boxes1, boxes2) {
+    boxes1.forEach(boxes) => {
+        console.log(boxes);
+    }
+
+    boxes2.forEach(boxes) => {
+        console.log(boxes);
+    }
+}
+```
+Since the parameters `boxes1` and `boxes2` are different and most likely have different sizes, the Big O notation for this block of code is  `O(m + n)`
+
 Resources: 
 - [BigO cheat sheet](https://www.bigocheatsheet.com/).
