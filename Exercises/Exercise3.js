@@ -65,6 +65,7 @@ Output - Boolean (True or false)
 //Brute force method
 const array1 = ['a', 'b', 'c', 'x']
 const array2 = ['x', 'y', 'z']
+
 function containsCommonItem(arr1, arr2) {
     for (let  i=0; i < arr1.length; i++) {
         for (let j=0; j < arr2.length; j++) {
@@ -76,5 +77,15 @@ function containsCommonItem(arr1, arr2) {
 
 containsCommonItem(array1, array2); //O(a*b)
 
+//Better solution
+const array1 = ['a', 'b', 'c', 'x']
+const array2 = ['x', 'y', 'z']
+
+function containsCommonItem2(arr1, arr2) {
+    //loop through first array and create object where properties === items in the array
+    
+    //loop through second array and check if item in second array exists on created account
+    
+}
 
 
