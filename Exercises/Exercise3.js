@@ -32,3 +32,16 @@ Good code checklist
 - Low space complexity, recursion can cause stack 
 */
 
+/*
+Interview question
+
+Given two arrays, create a function that let's a user know whether these two arrays contain any common
+items. For example,
+const array1 = ['a', 'b', 'c', 'd', 'e']
+const array2 = ['x', 'y', 'z']
+should return false 
+while
+const array1 = ['a', 'b', 'c', 'x']
+const array2 = ['x', 'y', 'z']
+should return true
+*/
