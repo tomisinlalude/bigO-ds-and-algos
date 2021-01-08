@@ -12,10 +12,10 @@ Make sure you have all the details. Show how organized you are.
 3. What is the most important value of the problem? Do you have time, space and memory? What is the main goal?
 4. Don't be annoying and ask too many questions
 5. Start with the naive/brute force approach. What is the first thing that comes to mind. It shows you
-are able to think well and critically.
+are able to think well and critically. (You don't need to write this code, just think about it)
 6. Tell them why this approach is not the best (i.e O(n^2 or higher, not readable etc))
 7. Walk through your approach, comment things and see where you may be able to break things. Any 
-repititions, bottlenecks, like O()
+repititions, bottlenecks, like O(n^2) or unnecessary work? Did you use all the info your interviewer gave you?
 8. Before you start coding, walk through your code and write down the steps you are going to do.
 9. Modularize your code from the very beginning. Break up your code into beautiful small pieces and just
 add comments if you ne
@@ -55,4 +55,26 @@ const array2 = ['x', 'y', 'z']
 should return true
 */
 
-function 
+//Solution
+/*
+Inputs/Parameters - Two arrays
+Size - No limit
+Output - Boolean (True or false)
+*/
+
+//Brute force method
+const array1 = ['a', 'b', 'c', 'x']
+const array2 = ['x', 'y', 'z']
+function containsCommonItem(arr1, arr2) {
+    for (let  i=0; i < arr1.length; i++) {
+        for (let j=0; j < arr2.length; j++) {
+            if(arr1[i] === arr2[j]) return true;
+        }
+    }
+    return false;
+}
+
+containsCommonItem(array1, array2); //O(a*b)
+
+
+
