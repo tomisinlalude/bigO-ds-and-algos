@@ -18,11 +18,11 @@ are able to think well and critically. (You don't need to write this code, just 
 repititions, bottlenecks, like O(n^2) or unnecessary work? Did you use all the info your interviewer gave you?
 8. Before you start coding, walk through your code and write down the steps you are going to do.
 9. Modularize your code from the very beginning. Break up your code into beautiful small pieces and just
-add comments if you ne
+add comments if you need to.
 10. Start actually writing your code now. Keep in mind that the more you prepare and understand what
 you need to code, the better
 11. Think abour error checks and how you can break this code. Never make assumptions about the input. Assume
-people are trying 
+people are trying to find loopholes and break your code and that Darth Vader is using your function.
 12.Don't use bad conflicting names like i and j. Write code that reads well
 13. Test your code: Check for no params, 0, undefined, null, massive arrays, async code, etc. Ask the 
 interviewer if you can make
