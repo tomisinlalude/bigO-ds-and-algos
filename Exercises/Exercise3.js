@@ -99,4 +99,6 @@ function containsCommonItem2(arr1, arr2) {
     return false;
 }
 
+containsCommonItem2(array1, array2);
+
 
