@@ -117,3 +117,9 @@ function containsCommonItem3(arr1, arr2) {
 }
 
 containsCommonItem3(array1, array2); 
+
+/*
+Time Complexity: O(a)
+Space Complexity: O(1)
+This program is very readable, quite fast and also saves a lot of memory
+*/
