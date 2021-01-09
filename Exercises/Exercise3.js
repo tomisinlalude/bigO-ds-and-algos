@@ -25,9 +25,9 @@ you need to code, the better
 people are trying to find loopholes and break your code and that Darth Vader is using your function.
 12.Don't use bad conflicting names like i and j. Write code that reads well
 13. Test your code: Check for no params, 0, undefined, null, massive arrays, async code, etc. Ask the 
-interviewer if you can make
+interviewer if you can make assumptions.
 14. Finally, talk to the interviewer where you would improve the code. Does it work? Are there different
-approaches? Is it readable?
+approaches? Is it readable? How can performance be improved?
 15.If your interviewer is happy with the solution, the interviewer usually ends here. It is also 
 common that the interviewer asks you extension questions
 */
@@ -75,7 +75,12 @@ function containsCommonItem(arr1, arr2) {
     return false;
 }
 
-containsCommonItem(array1, array2); //O(a*b)
+containsCommonItem(array1, array2); 
+/*
+Time Complexity: O(a*b)
+Space Complexity: O(1)
+Although this program is slow, it does save memory
+*/
 
 //Better solution
 const array1 = ['a', 'b', 'c', 'x']
@@ -100,5 +105,15 @@ function containsCommonItem2(arr1, arr2) {
 }
 
 containsCommonItem2(array1, array2);
+/*
+Time Complexity: O(a + b)
+Space Complexity: O(a)
+Although this program is faster, it takes more memory. It is also less readable
+*/
 
+//Best solution
+function containsCommonItem3(arr1, arr2) {
+    return arr1.some(item => arr2.includes(item));
+}
 
+containsCommonItem3(array1, array2); 
