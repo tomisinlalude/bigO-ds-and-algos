@@ -20,5 +20,15 @@ function reverse1(str) {
 function reverse2(str) {
     str.split('').reverse().join('');
 }
+/**
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 
-reverse2('My name is Tomisin');
+const reverse3 = str = [...str].reverse().join('');
+/**
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
+
+reverse3('My name is Tomisin');
