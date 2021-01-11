@@ -12,5 +12,13 @@ function reverse1(str) {
     }
     return backwards.join('');
 }
+/**
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 
-reverse1('My name is Tomisin');
+function reverse2(str) {
+    str.split('').reverse().join('');
+}
+
+reverse2('My name is Tomisin');
