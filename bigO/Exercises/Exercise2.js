@@ -13,7 +13,7 @@ function anotherFunChallenge(input) {
       let p = j * 2; // O(n)
       let q = j * 2; // O(n)
     }
-    let whoAmI = "I don't know"; O(1)
+    let whoAmI = "I don't know"; //O(1)
   }
   
   // BigO: O(4 + 7n)
