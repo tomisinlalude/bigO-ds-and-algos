@@ -41,4 +41,27 @@ nums is sorted in ascending order.
 
 **/
 
+/**
+    * PSEUDOCODE
+    1. Initialize index = 0
+    2. Run a while loop and for each element, if the element is equal to the last element,
+    slice run an array slice on the element, and do no increase the index, else do nothing       and increase the index
+    *
+**/
+
+//Brute-force solution
+let removeDuplicates = (nums) => {
+    let index = 0;
+    while(index < nums.length){
+        if(nums[index-1] === nums[index] && index !== 0) {
+            nums.splice(index, 1);
+        }else{
+            index++
+        }
+    }
+    return nums.length;
+};
+
+removeDuplicates([0,1,1,2,2,3,4,4,5]);
+
 
