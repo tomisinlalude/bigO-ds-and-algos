@@ -64,4 +64,23 @@ let removeDuplicates = (nums) => {
 
 removeDuplicates([0,1,1,2,2,3,4,4,5]);
 
+//Optimized solution
+let removeDuplicates2 = (nums) => {
+
+    let numsMap = new Map();
+  
+    for (let i = 0; i < nums.length; i++) {
+      const count = numsMap.get(nums[i]) || 0;
+  
+      if (numsMap.has(nums[i])) {
+        nums.splice(i, count);
+        i--;
+      } else {
+        numsMap.set(nums[i], count + 1);
+      }
+    }
+  
+    return nums.length;
+  }
+
 
