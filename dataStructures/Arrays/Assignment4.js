@@ -19,6 +19,9 @@ then last index of subarray being last index of original array
 3. In the innermost loop, compare the initial sum, negative infinity to the sum of the subarray
 */
 
+//Brute force
+//Cubic Algorithm
+
 var maxSubArray = (nums) => {
     var max_so_far = Number.NEGATIVE_INFINITY;
     var len = nums.length;
@@ -40,3 +43,5 @@ var maxSubArray = (nums) => {
     }
     return max_so_far;
 }
+
+//Quadratic Algorithm
