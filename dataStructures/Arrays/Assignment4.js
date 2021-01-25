@@ -71,3 +71,5 @@ function findMaxSubArrayBruteForce(arr) {
 		final_max_sum_subArray: max_so_far
 	};
 }
+
+//Divide and conquer approach
