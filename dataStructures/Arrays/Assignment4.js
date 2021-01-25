@@ -90,5 +90,12 @@ Now, time complexity:
 T(n) = 2*T(n/2) + O(Max_Opposite).
 If function “Max_Opposite” is O(n²), then T(n) = O(n²). But if we manage to make it O(n), then
 T(n) = O(nlogn) 
+
+So, I have to save four values for each subarray:
+Maximum sum that is contained entirely in the left half ( mss_l)
+Maximum sum that is contained entirely in the right half ( mss_r )
+Sum of the whole array ( t )
+Maximum of above values ( mx )
+For the case, that I am checking a subarray of size 1 all of these values are equal to the value of that element. When merging two subarrays (sub_left, sub_right) these values will be:
  *
  */
