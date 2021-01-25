@@ -73,3 +73,20 @@ function findMaxSubArrayBruteForce(arr) {
 }
 
 //Divide and conquer approach
+/**
+ *Split the input in half, and consider that the maximum sum subarray can come from three places:
+Entirely from left half.
+Entirely from right half.
+It consists of some number of rightmost elements of the left half and some number of leftmost elements of the right half.
+Then solve the problem recursively on the left and right halves. I would then know the best subarrays I can get that are entirely in each of the halves, for points 1 and 2 above.
+1. Select the middle element of the array.
+So the maximum subarray may contain that middle element or not.
+2.1 If the maximum subarray does not contain the middle element, then we can apply the same algorithm to the the subarray to the left of the middle element and the subarray to the right of the middle element.
+2.2 If the maximum subarray does contain the middle element, then the result will be simply the maximum suffix subarray of the left subarray plus the maximum prefix subarray of the right subarray
+3 return the maximum of those three answer.
+Now, time complexity:
+T(n) = 2*T(n/2) + O(Max_Opposite).
+If function “Max_Opposite” is O(n²), then T(n) = O(n²). But if we manage to make it O(n), then
+T(n) = O(nlogn) 
+ *
+ */
