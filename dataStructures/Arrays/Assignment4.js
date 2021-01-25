@@ -97,5 +97,10 @@ Maximum sum that is contained entirely in the right half ( mss_r )
 Sum of the whole array ( t )
 Maximum of above values ( mx )
 For the case, that I am checking a subarray of size 1 all of these values are equal to the value of that element. When merging two subarrays (sub_left, sub_right) these values will be:
- *
+ 
+sub_left = max( sub_left.s_l, sub_left.t + sub_right.s_l )
+s_r = max( sub_right.s_r, sub_right.t + sub_left.s_r )
+t = sum( sub_left.t + sub_right.t )
+mx = max( s_l, s_r, t, sub_right.mx, sub_left.mx, sub_left.r+sub_right.l)
+*
  */
