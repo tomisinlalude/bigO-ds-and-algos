@@ -138,3 +138,5 @@ mx = max( s_l, s_r, t, sub_right.mx, sub_left.mx, sub_left.r+sub_right.l)
   let allPositives = arr => arr.every(n => n > 0)
   let allNegatives = arr => arr.every(n => n < 0)
   let sum = arr => arr.reduce((curr_max, max_so_far) => curr_max + max_so_far, 0)
+  
+  
