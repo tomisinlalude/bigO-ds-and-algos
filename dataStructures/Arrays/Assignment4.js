@@ -152,3 +152,6 @@ var maxSequence = function(arr){
   return max_so_far;
 }
 
+console.log(maxSequence([-2, -1, -3, -4, -1, -2, -1, -5, -4])); // returns 0
+console.log(maxSequence([])); // returns 0
+console.log(maxSequence([2, 1, 3, 4, 1, 2, 1, 5, 4])); // returns 23
