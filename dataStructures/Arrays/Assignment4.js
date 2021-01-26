@@ -103,4 +103,8 @@ s_r = max( sub_right.s_r, sub_right.t + sub_left.s_r )
 t = sum( sub_left.t + sub_right.t )
 mx = max( s_l, s_r, t, sub_right.mx, sub_left.mx, sub_left.r+sub_right.l)
 *
+* Time Complexity
+* T(n) = 2*T(n/2) + O(Max_Opposite).
+*  If function “Max_Opposite” is O(n²), then T(n) = O(n²). But if we manage to make it O(n), then
+*  T(n) = O(nlogn)
  */
