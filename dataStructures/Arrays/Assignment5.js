@@ -5,9 +5,8 @@
  */
 
 //Naive solution
-function twoPairSum(arr) {
+function twoPairSum(arr, X) {
   let arr.length = N;
-  let X;
   for (let i=0; i < N; i++) {
     for (let j=0; j < N; j++) {
       if (arr[1] + arrr[j] === X) {
