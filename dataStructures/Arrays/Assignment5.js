@@ -22,3 +22,4 @@ function twoPairSum(arr, X) {
 //Big O: O(n^2)
 
 //Two pointers Technique
+while()
