@@ -5,6 +5,21 @@
  */
 
 //Naive solution
+function twoPairSum(arr) {
+  let arr.length = N;
+  let X;
+  for (let i=0; i < N; i++) {
+    for (let j=0; j < N; j++) {
+      if (arr[1] + arrr[j] === X) {
+        return true;
+      }
+      else if (arr[i] + arr[j] > X) {
+        return false;
+      }
+    }
+    return "No such pairs";
+  }
+}
 //Big O: O(n^2)
 
 //Two pointers Technique
