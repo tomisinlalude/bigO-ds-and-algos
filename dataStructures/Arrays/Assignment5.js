@@ -5,6 +5,6 @@
  */
 
 //Naive solution
-
+//Big O: O(n^2)
 
 //Two pointers Technique
