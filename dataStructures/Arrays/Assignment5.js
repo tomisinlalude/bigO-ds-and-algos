@@ -11,7 +11,7 @@ function twoPairSum(arr, X) {
     for (let j=0; j < N; j++) {
       if (arr[1] + arrr[j] === X) {
         return true;
-      }
+      } 
       else if (arr[i] + arr[j] > X) {
         return false;
       }
@@ -22,4 +22,4 @@ function twoPairSum(arr, X) {
 //Big O: O(n^2)
 
 //Two pointers Technique
-while()
+while() 
